@@ -1,0 +1,161 @@
+island:
+  width: 20
+  height: 20
+  cycle_duration_ms: 1
+
+animals:
+  Wolf:
+    type: Predator
+    weight: 50
+    max_per_cell: 30
+    speed: 3
+    food_needed: 8
+    prey:
+      Horse: 10
+      Deer: 15
+      Rabbit: 60
+      Mouse: 80
+      Goat: 60
+      Sheep: 70
+      Boar: 15
+      Buffalo: 10
+      Duck: 40
+  Boa:
+    type: Predator
+    weight: 15
+    max_per_cell: 30
+    speed: 1
+    food_needed: 3
+    prey:
+      Fox: 15
+      Rabbit: 20
+      Mouse: 40
+      Duck: 10
+  Fox:
+    type: Predator
+    weight: 8
+    max_per_cell: 30
+    speed: 2
+    food_needed: 2
+    prey:
+      Rabbit: 70
+      Mouse: 90
+      Duck: 60
+      Caterpillar: 40
+  Bear:
+    type: Predator
+    weight: 500
+    max_per_cell: 5
+    speed: 2
+    food_needed: 80
+    prey:
+      Boa: 80
+      Horse: 40
+      Deer: 80
+      Goat: 70
+      Sheep: 70
+      Rabbit: 80
+      Mouse: 90
+      Boar: 50
+      Buffalo: 20
+      Duck: 10
+  Eagle:
+    type: Predator
+    weight: 6
+    max_per_cell: 20
+    speed: 3
+    food_needed: 1
+    prey:
+      Fox: 10
+      Rabbit: 90
+      Mouse: 90
+      Duck: 80
+  Horse:
+    type: Herbivore
+    weight: 400
+    max_per_cell: 20
+    speed: 4
+    food_needed: 60
+    prey:
+      plants: 100
+  Deer:
+    type: Herbivore
+    weight: 300
+    max_per_cell: 20
+    speed: 4
+    food_needed: 50
+    prey:
+      plants: 100
+  Rabbit:
+    type: Herbivore
+    weight: 2
+    max_per_cell: 150
+    speed: 2
+    food_needed: 0.45
+    prey:
+      plants: 100
+  Mouse:
+    type: Herbivore
+    weight: 0.05
+    max_per_cell: 500
+    speed: 1
+    food_needed: 0.01
+    prey:
+      plants: 100
+      Caterpillar: 90
+  Goat:
+    type: Herbivore
+    weight: 60
+    max_per_cell: 140
+    speed: 3
+    food_needed: 10
+    prey:
+      plants: 100
+  Sheep:
+    type: Herbivore
+    weight: 70
+    max_per_cell: 140
+    speed: 3
+    food_needed: 15
+    prey:
+      plants: 100
+  Boar:
+    type: Herbivore
+    weight: 400
+    max_per_cell: 50
+    speed: 2
+    food_needed: 50
+    prey:
+      plants: 100
+      Caterpillar: 90
+      Mouse: 50
+  Buffalo:
+    type: Herbivore
+    weight: 700
+    max_per_cell: 10
+    speed: 3
+    food_needed: 100
+    prey:
+      plants: 100
+  Duck:
+    type: Herbivore
+    weight: 1
+    max_per_cell: 200
+    speed: 4
+    food_needed: 0.15
+    prey:
+      plants: 100
+      Caterpillar: 90
+  Caterpillar:
+    type: Herbivore
+    weight: 0.01
+    max_per_cell: 1000
+    speed: 0
+    food_needed: 0.01
+    prey:
+      plants: 100
+
+plants:
+  weight: 1
+  max_per_cell: 200
+  growth_rate_per_turn: 3
